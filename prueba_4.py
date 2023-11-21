@@ -6,9 +6,9 @@ st.set_page_config(page_title="Encuesta Oficial EPS") # Nombre para configurar l
 st.header('Resultados Encuestas Nacionales EPS Colombia 2022') #Va a ser el titulo de la pagina
 st.subheader('Cómo perciben los ciudadanos el servicio de las EPS en Colombia?') #Subtitulo
 
-excel_file = 'ENCUESTA EPS.xlsx' #Nombre archivo a importar  'xlsx' hace referencia a excel
+excel_file = 'Catalogo1960_2022.xlsx' #Nombre archivo a importar  'xlsx' hace referencia a excel
 
-sheet_name = 'BD' #la hoja de excel que voy a importar
+sheet_name = 'Catalogo1960_2022.xlsx' #la hoja de excel que voy a importar
 
 df = pd.read_excel(excel_file, #importo el archivo excel
                    sheet_name = sheet_name, #le digo cual hoja necesito
@@ -18,18 +18,15 @@ df = pd.read_excel(excel_file, #importo el archivo excel
 df_personas = df.groupby(['EPS'], as_index = False)['EDAD PERSONA ENCUESTADA'].count() #hago un tipo de TABLA DINAMICA para agrupar los datos de una mejor manera, lo que hago aqui es que por cada EPS, me cuente la cantidad de personas encuestadas***
 
 df_personas2 = df_personas #la guardo en otro dataframe (NO ES NECESARIO)
-import pandas as pd
+
 
 # Supongamos que ya tienes el DataFrame original df
 
 # Obtener el conteo de cada valor único en 'EDAD PERSONA ENCUESTADA'
-conteo_edades = df['EDAD PERSONA ENCUESTADA'].value_counts()
+conteo_edades = df['MAGNITUD'].value_counts()
 
 # Crear un nuevo DataFrame con 'EDAD PERSONA ENCUESTADA' y su frecuencia
-df_conteo = pd.DataFrame({'EDAD PERSONA ENCUESTADA': conteo_edades.index, 'FRECUENCIA': conteo_edades.values})
-
-
-
+df_conteo = pd.DataFrame({'MAGNITUD': conteo_edades.index, 'FRECUENCIA': conteo_edades.values})
 
 st.dataframe(df) #de esta forma nos va a mostrar el dataframe en Streamlit
 st.write(df_conteo)
