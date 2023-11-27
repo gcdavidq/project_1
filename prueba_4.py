@@ -5,30 +5,7 @@ from folium.plugins import HeatMap
 import pandas as pd
 import plotly.express as px
 
-##################################################
 
-st.button("Reset", type="primary")
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
-
-genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"]
-)
-
-
-##################################################
-############################
-# ruta_de_archivo = "Catalogo1960_2022.xlsx"
-
-# # Leer el archivo Excel
-# df = pd.read_excel(ruta_de_archivo, engine="openpyxl")
-# # Mostrar el DataFrame en Streamlit
-# st.write(df)
-
-############################
 # Leemos nuestro data set
 df = pd.read_excel("Catalogo1960_2022.xlsx")
 
