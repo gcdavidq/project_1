@@ -1,6 +1,29 @@
-<div align="center" style="margin-top: 50px; margin-bottom: 50px; font-family: Arial, sans-serif;">
-  <h1 style="font-size: 50px;">Facultad de Ciencias e Ingeniería</h1>
-  <p align="center">
-    <img src="https://3.files.edl.io/fdf6/22/05/20/143302-79bed48a-5422-4ab4-81ec-98e0f944c4a0.png" width="300" alt="Facultad de Ciencias e Ingeniería logo">
-  </p>  
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto centrado con tamaño de letra aumentado</title>
+  <style>
+    /* Estilo para centrar el contenido */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Estilo para aumentar el tamaño de la letra */
+    .texto-grande {
+      font-size: 24px; /* Puedes ajustar este valor según tus necesidades */
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor del texto con la clase "texto-grande" -->
+  <div class="texto-grande">
+    Este es un texto con un tamaño de letra aumentado y centrado.
+  </div>
+</body>
+</html>
