@@ -3,6 +3,6 @@
 </p>
 
 <p align="center" style="font-size: 50px;">
-  Este es un texto con un tamaño de letra aumentado y centrado.
+  Este es un texto con un tamaño de letra aumentado y centropknado.
 </p>
 
