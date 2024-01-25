@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texto centrado con tamaño de letra aumentado (solo HTML)</title>
-</head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center;">
-  <!-- Texto con tamaño de letra aumentado -->
-  <p style="font-size: 50px;">
-    Este es un texto con un tamaño de letra aumentado y centrado.
-  </p>
-</body>
-</html>
+<p align="center">
+  <img src="https://3.files.edl.io/fdf6/22/05/20/143302-79bed48a-5422-4ab4-81ec-98e0f944c4a0.png" alt="Descripción de la imagen">
+</p>
+
+<p align="center" style="font-size: 24px;">
+  Este es un texto con un tamaño de letra aumentado y centrado.
+</p>
 
